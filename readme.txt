@@ -1,0 +1,2 @@
+This is my solution to Kaggle Amazon Forest Competition (https://www.kaggle.com/c/planet-understanding-the-amazon-from-space).
+I rank 78 among 938 teams and won a bronze model with final score of 0.92966 (F2-score).
