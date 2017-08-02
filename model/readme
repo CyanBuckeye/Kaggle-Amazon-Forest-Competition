@@ -1,0 +1,3 @@
+This directory contains Well-trained models.
+'set_x' means that I divide data into 5 folds and this model is validated on the X-th fold and trained with the rest data.
+
