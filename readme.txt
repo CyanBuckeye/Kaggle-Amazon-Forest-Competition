@@ -6,6 +6,6 @@ In competition, we are asked to label over 60000 images. Each image has one or m
 2. Imbalance between classes. For example, there are over 35000 images with label of "primary" among 40476 training samples while there are just less than 400 images with label of "selective_logging".
 3. Limited training data. It is a challenge to get a well-trained deep neural network with around 40000 images. In contrast, shallow classifiers such as support vector machine, are less greedy on training data but suffer from inferior performance.
 
-To deal with problem 1, inspired by the deconvolution net for segmentation, we decide to use deconvolution network instead of classical convolution network; for problem 3, we use data augmentation to alleviate overfitting. And we tried to apply the same trick to solve the problem 2. However, network trained on balanced data performs worse. It can be explained that balanced data loses information of data distribution.
+To deal with problem 1, inspired by the deconvolution net for segmentation, we decide to use deconvolution network instead of classical convolution network; for problem 3, we use data augmentation to alleviate overfitting. And we tried to apply the same trick to solve the problem 2. However, network trained on balanced data performs worse. It can be explained that balanced data loses information of data distribution.(unfinished yet)
 
 
