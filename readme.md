@@ -22,7 +22,8 @@ How We Got Results
 ### First method
 design and implement deep neural network from scratch. To deal with problem 1, inspired by the deconvolution net for segmentation, we decided to use deconvolution network instead of classical convolution network; for problem 3, 
 we utilized data augmentation to alleviate overfitting. And we tried to apply the same trick to solve the problem 2.  
-![sample image](https://raw.githubusercontent.com/CyanBuckeye/Kaggle-Amazon-Forest-Competition/master/image/overfit_loss.jpg)
-![sample image](https://raw.githubusercontent.com/CyanBuckeye/Kaggle-Amazon-Forest-Competition/master/image/overfit_score.jpg)
+![sample image](https://raw.githubusercontent.com/CyanBuckeye/Kaggle-Amazon-Forest-Competition/master/image/overfit_loss.png)
+![sample image](https://raw.githubusercontent.com/CyanBuckeye/Kaggle-Amazon-Forest-Competition/master/image/overfit_score.png)  
+__An example of overfitting we met: the left one is training-loss; the right one is validation score__
 
 
