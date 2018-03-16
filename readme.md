@@ -20,10 +20,20 @@ Difficulties
 How We Got Results
 --------------------------------
 ### First method
-design and implement deep neural network from scratch. To deal with problem 1, inspired by the deconvolution net for segmentation, we decided to use deconvolution network instead of classical convolution network; for problem 3, 
+Design and implement deep neural network from scratch. To deal with problem 1, inspired by the deconvolution net for segmentation, we decided to use deconvolution network instead of classical convolution network; for problem 3, 
 we utilized data augmentation to alleviate overfitting. And we tried to apply the same trick to solve the problem 2.  
 ![sample image](https://raw.githubusercontent.com/CyanBuckeye/Kaggle-Amazon-Forest-Competition/master/image/overfit_loss.png)
 ![sample image](https://raw.githubusercontent.com/CyanBuckeye/Kaggle-Amazon-Forest-Competition/master/image/overfit_score.png)  
-__An example of overfitting we met: the left one is training-loss; the right one is validation score__
+__An example of overfitting we met: the left one is training-loss; the right one is validation-loss__
 
+### Second Method
+Although our first idea sounds reasonable, its performance is not good enough: F2-score on validation set is around 0.915. In addition, it took more than one day for training even we were equipped with GTX 1070 graphic card. Then we learnt from paper that finetuing may be a good solution. So we changed our policy: instead of training model from scratch, we imported pre-trained model, such as ResNet-50, and tuned its parameters on our dataset. I also managed to improve my code's efficiency. I noticed that the 32GB memory is able to accommodate the whole training set. So it is unnecessary to load each batch of data from disk then do data augmentation. I implemented data augmentation function and applied it on memory data. At last, 
+training time was reduced to 5 hours from over 24 hours. What's more, we rented two P2 instances of AWS for further speedup.  
+![sample image](https://raw.githubusercontent.com/CyanBuckeye/Kaggle-Amazon-Forest-Competition/master/image/res50_finetune_trainingloss.png)
+![sample image](https://raw.githubusercontent.com/CyanBuckeye/Kaggle-Amazon-Forest-Competition/master/image/res50_finetune_validationloss.png)  
+__An example of finetuning: the left one is training-loss on finetuned ResNet-50; the right one is validation-loss__
 
+Conclusion
+--------------------------------
+"Where there is a will, there is a road". Through hard working and cooperation, my friend and I won a bronze medal. For me, there are much more valuable things 
+I achieved from it: technique skills, programming experience, cooperation spirit and confidence with myself.         
