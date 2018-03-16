@@ -31,7 +31,7 @@ Although our first idea sounds reasonable, its performance is not good enough: F
 training time was reduced to 5 hours from over 24 hours. What's more, we rented two P2 instances of AWS for further speedup.  
 ![sample image](https://raw.githubusercontent.com/CyanBuckeye/Kaggle-Amazon-Forest-Competition/master/image/res50_finetune_trainingloss.png)
 ![sample image](https://raw.githubusercontent.com/CyanBuckeye/Kaggle-Amazon-Forest-Competition/master/image/res50_finetune_validationloss.png)  
-__An example of finetuning: the left one is training-loss on finetuned ResNet-50; the right one is validation-loss__
+__An example of finetuning: the left one is training-loss of finetuned ResNet-50; the right one is validation-loss__
 
 Conclusion
 --------------------------------
