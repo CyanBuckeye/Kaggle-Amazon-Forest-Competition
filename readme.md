@@ -7,7 +7,7 @@ This is our team's solution to [Kaggle Competition of Understanding Amazon from 
 About Contest
 -------------------------------
 In competition, we were asked to label over 60000 images. Each image has one or more labels among the following seventeen ones: cloudy, partly_cloudy, haze, water, habitation, agriculture, road, cultivation, bare_ground, primary, slash_burn, selective_logging, blooming, conventional_mine, artisinal_mine, blow_down and clear.
-Essentially it is a multi-label classification task.
+Essentially it is a multi-label classification task.  
 ![sample image](https://raw.githubusercontent.com/CyanBuckeye/Kaggle-Amazon-Forest-Competition/master/image/sample.jpg) 
 An example image, whose corresponding label is __agriculture cultivation partly_cloudy primary road water__
 
